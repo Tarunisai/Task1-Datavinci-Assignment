@@ -1,0 +1,127 @@
+.navbar {
+  display: flex;
+  position: sticky;
+  background-color: #fbf9f6;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style: none;
+  width:100%;
+  padding: 0px;
+}
+.icons-list{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style: none;
+  gap: 10px;
+  padding: 0px;
+}
+
+.link-1{
+    border: 1px solid black;
+    border-radius: 22px;
+    padding: 10px 15px;
+    font-weight: 100;
+}
+.bt-nav{
+  border: none;
+  background: none;
+  font-size: 20px;
+}
+.icon{
+  font-size: 30px;
+}
+.cart-icon{
+  display: flex;
+}
+.cart-count{
+  display: flex;
+  justify-content: center;
+  background-color:#f1b434 ;
+  color:#000000;
+  position: relative;
+  right:22px;
+  bottom: 15px;
+  font-size: 12px;
+  width: 22px;
+  height: 22px;
+  border-radius: 11px;
+}
+.logo-img{
+  width:200px;
+}
+
+.mobile-nav{
+  display: none;
+}
+button:focus {
+  outline: 2px solid #830065;
+  outline-offset: 2px;
+}
+
+/* ---------- Responsive Styles for mobile---------- */
+@media (max-width: 768px) {
+  .navbar {
+    display: none; 
+  }
+
+  .mobile-menu.open {
+  display: flex;
+}
+  .mobile-menu {
+  display: none;
+  flex-direction: column;
+  list-style: none;
+  background: #f8f9fa;
+  position: absolute;
+  top: 60px; /* below navbar */
+  left: 0;
+  width: 100%;
+  padding: 16px;
+  gap: 16px;
+}
+.mobile-nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+   background-color: #fbf9f6;
+}
+  
+  .hamburger {
+  font-size: 30px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+.logo-img{
+  width: 100px;
+  margin-left: 120px;
+}
+.mobile-list{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style-type: none;
+  gap:10px;
+  }
+.mobile-icon{
+  font-size: 25px;
+}
+.mobile-icon-bt{
+  font-size: 25px;
+  background: none;
+  border: none;
+}
+.mobile-icon-bth{
+  font-size: 16px;
+  background: none;
+  border: none;
+}
+.cart-count{
+  bottom: 10px;
+}
+}
